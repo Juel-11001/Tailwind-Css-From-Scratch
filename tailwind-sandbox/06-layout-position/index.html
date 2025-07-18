@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body class="container mx-auto">
+    <!-- Positioning -->
+      <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20 mt-2">
+        <div class="absolute bg-green-200 bottom-0 rounded-md p-1 right-0">
+          text
+        </div>
+      </div>
+    <br>
+    <!-- Top left corner -->
+    <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20">
+      <div class="absolute bg-green-200  rounded-md p-1 ">
+        text
+      </div>
+    </div>
+    <br>
+    <!-- Top right corner -->
+    <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20">
+      <div class="absolute bg-green-200 right-0  rounded-md p-1 ">
+        text
+      </div>
+    </div>
+    <br>
+    <!-- Bottom left corner -->
+    <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20">
+      <div class="absolute bg-green-200 bottom-0  rounded-md p-1 ">
+        text
+      </div>
+    </div>
+    <br>
+    <!-- Bottom right corner -->
+
+    <!-- Span top edge -->
+    <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20">
+      <div class="absolute bg-green-200 inset-x-0  rounded-md p-1 h-10">
+      </div>
+    </div>
+    <br>
+    <!-- Span left edge -->
+    <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20">
+      <div class="absolute bg-green-200 inset-y-0  rounded-md p-1 w-20">
+      </div>
+    </div>
+    <br>
+    <!-- Span right edge -->
+    <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20">
+      <div class="absolute bg-green-200 inset-y-0 right-0  rounded-md p-1 w-20">
+      </div>
+    </div>
+    <br>
+    <!-- Span bottom edge -->
+    <div class="bg-red-200 relative w-40 rounded-md shadow-md  h-20">
+      <div class="absolute bg-green-200 inset-x-0 bottom-0 rounded-md p-1 h-10">
+      </div>
+    </div>
+    <br>
+    <!-- Display Classes -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolore eligendi exercitationem, facere, <span class="inline font-bold">id illo incidunt</span> inventore labore laudantium nesciunt <span class="inline-block font-bold">non quas repudiandae</span> sequi sunt vel voluptas voluptatibus. Consectetur, sed.</p>
+    <br>
+    <br>
+    <!-- Z-Index -->
+    <div class="relative h-36">
+    <div class="absolute  left-10 w-20 h-20 bg-green-300 z-40">1</div>
+      <div class="absolute  left-20 w-20 h-20 bg-green-400">1</div>
+  <div class="absolute  left-40 w-20 h-20 bg-green-500">2</div>
+  <div class="absolute  left-60 w-20 h-20 bg-green-600">3</div>
+  <div class="absolute  left-80 w-20 h-20 bg-green-700">4</div>
+</div>
+    <!-- Floats -->
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
