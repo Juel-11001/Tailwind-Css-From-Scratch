@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Subscribe</title>
+  <link href="./assets/output.css" rel="stylesheet">
+</head>
+<body class="h-full">
+  <!-- background content -->
+  <div class="flex bg-zinc-700 items-center justify-center h-screen">
+    <!-- card -->
+    <div class="bg-zinc-800 p-2 mx-6 rounded-2xl">
+      <div class="flex flex-col md:flex-row rounded-l-xl">
+        <!-- image -->
+         <img src="../template/images/image.jpg" alt="" class="object-fit rounded-xl h-80 md:h-64 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl transition duration-200">
+         <!-- content -->
+          <div class="p-6 md:p-12 font-serif font-medium text-white text-xl text-center md:text-left">
+              Get diet and fitness tips in your inbox
+              <p class="max-w-xs text-xs text-center my-4 leading-5 tracking-wide text-white md:text-left">
+                Eat better and exercise better. Sign up for the Diet&Fitness newsletter.
+              </p>
+              <div class="flex flex-col md:flex-row my-5 space-y-4 md:space-x-3 md:space-y-0">
+                <input type="text" name="email" class="rounded-md border border-zinc-600 p-2 px-4 placeholder:text-xs placeholder:text-gray-200 md:text-left placeholder:md:text-left focus:outline-none focus:border-zinc-400 input:cursor-xs"  placeholder="Enter your email address" id="">
+                <button type="submit" class="bg-lime-500 p-2 px-4 rounded-md hover:bg-lime-700  cursor-pointer  text-zinc-900 hover:text-white text-xs transition duration-300">Subscribe</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
