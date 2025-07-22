@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+     "build": "tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css",
+    "watch": "tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
