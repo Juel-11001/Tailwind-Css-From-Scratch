@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@theme{
+    --font-sans: 'Poppins', sans-serif;
+}
+@layer utilities {
+    .text-cyan {
+        color: hsl(180, 66%, 49%);
+    }
+    .hover\:text-cyan:hover{
+        color: hsl(180, 66%, 49%);
+    }
+    .bg-cyan {
+        background-color: hsl(180, 66%, 49%);
+    }
+
+    .text-cyan-light {
+        color: hsl(180, 66%, 69%);
+    }
+    .bg-cyan-light {
+        background-color: hsl(180, 66%, 69%);
+    }
+    .hover\:bg-cyan-light:hover {
+        background-color: hsl(180, 66%, 69%);
+    }
+
+    .text-dark-violet {
+        color: hsl(257, 27%, 26%);
+    }
+    .bg-dark-violet {
+        background-color: hsl(257, 27%, 26%);
+    }
+
+    .text-red {
+        color: hsl(0, 87%, 67%);
+    }
+    .bg-red {
+        background-color: hsl(0, 87%, 67%);
+    }
+
+    .text-grayish-violet {
+        color: hsl(257, 7%, 63%);
+    }
+    .bg-grayish-violet {
+        background-color: hsl(257, 7%, 63%);
+    }
+
+    .text-very-dark-blue {
+        color: hsl(255, 11%, 22%);
+    }
+    .bg-very-dark-blue {
+        background-color: hsl(255, 11%, 22%);
+    }
+    .hover\:text-very-dark-violet:hover {
+        color: hsl(260, 8%, 14%);
+    }
+    /*.text-very-dark-violet {*/
+    /*    color: hsl(260, 8%, 14%);*/
+    /*}*/
+    /*.very-dark-violet {*/
+    /*    color: hsl(260, 8%, 14%);*/
+    /*}*/
+    .bg-very-dark-violet {
+        background-color: hsl(260, 8%, 14%);
+    }
+}
+#cta{
+    background-image: url("../../template/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ficon:hover {
+    filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) brightness(89%) contrast(85%);
+}
+.hamburger{
+    cursor:pointer;
+    width: 24px;
+    height: 24px;
+    transition: 0.25s;
+    position: relative;
+}
+.hamburger-top,.hamburger-middle,.hamburger-bottom{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #9c9aa6;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open{
+    transform: rotate(90deg);
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translatex(-6px);
+}
