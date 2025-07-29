@@ -53,7 +53,7 @@
     left:0;
     background: #fff;
     transform: rotate(0);
-    transition: al 0.5s;
+    transition: all 0.5s;
 }
 .hamburger-middle{
     transform: translateY(7px);
